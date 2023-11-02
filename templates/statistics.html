@@ -1,0 +1,14 @@
+<tr>
+    <th>Rank</th>
+    <th>Case</th>
+    <th>Time</th>
+</tr>
+{% for rank, (case, time) in sorted_cases %}
+    {% if time is not none %}
+        <tr>
+            <td>{{ rank }}</td>
+            <td>{{ pllNames[case] }}</td>
+            <td>{{ time[1] }}</td>
+        </tr>
+    {% endif %}
+{% endfor %}

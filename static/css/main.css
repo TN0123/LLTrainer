@@ -1,0 +1,62 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.scramble {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin-left: 390px;
+    margin-bottom: 250px;
+}
+
+.timestable {
+    height: 600px;
+    width: 265px;
+    overflow-y: scroll;
+    align-items: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.statstable{
+    height: 600px;
+    width: 265px;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    overflow-y: scroll;
+    margin-left: 384px;
+}
