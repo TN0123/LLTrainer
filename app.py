@@ -83,6 +83,16 @@ def delete(id):
     except Exception as e:
         print(f"Error deleting time with ID {id}: {e}")
         return 'There was a problem deleting that time'
-    
+
+@app.route('/reset/')
+def reset():
+    try:
+        db.drop_all()
+        db.create_all()
+        db.engine.execute('DELETE FROM sqlite_sequence WHERE name="TimeRecord"')
+        return redirect('/')
+    except Exception as e:
+        return redirect('/')
+
 if __name__ == "__main__":
     app.run(debug=True)
