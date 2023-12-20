@@ -1,5 +1,5 @@
 # LLTrainer
-A speedsolving website that helps cubers train last layer algorithms
+A speedcubing web application that helps cubers train last layer algorithms
 
 ## Demo
 
